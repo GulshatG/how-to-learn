@@ -13,14 +13,20 @@
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
+  box-sizing: content-box;
+  background-color: #f2f2f2;
   /* выше установили ограничения для секции */
 }
 
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
-.header__square-pic {
-  height: 568px;
-  width: 568px;
+.flex-row {
+  display: flex;
 }
+
+ .flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ }
 
 /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
@@ -28,4 +34,76 @@
   color: white;
   margin-right: 0;
   margin-top: 80px;
+}
+
+.logo_place_header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 32px;
+  width: 228px;
+  margin-top: 30px;
+  margin-left: 64px;
+}
+
+.header__title {
+  width: 730px;
+  margin-left: 64px;
+  line-height: 96px;
+  font-size: 102px;
+  font-weight: 600;
+}
+
+.header__subtitle {
+  position: absolute;
+  width: 388px;
+  margin-left: 64px;
+  margin-bottom: 30px;
+  bottom: 0;
+  left: 0;
+}
+
+.header__main-ilustration {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  width: 765px;
+  height: 608px;
+  background-image: url(../images/header-image.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  z-index: 1;
+}
+
+/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
+.header__square-pic {
+  height: 568px;
+  width: 568px;
+  background-color: #2f80ed;
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-top: 64px;
+  z-index: 0;
+}
+
+.description {
+  margin-top: 100px;
+}
+
+.digits {
+  margin: 100px 0px;
+}
+
+.feynman {
+
+}
+
+.kaufman {
+  margin: 90px 0px;
+}
+
+.footer {
+  margin-top: 60px 0px 40px;
 }
